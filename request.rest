@@ -1,0 +1,24 @@
+GET http://localhost:3000/user-grid
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA3Mjg1MmI2MGY0YWJmMDJhNzVhNmIiLCJ1c2VybmFtZSI6InJhbmdiaW5kIiwiZW1haWwiOiJyYW5nQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiX192IjowLCJpYXQiOjE2NzgxOTEyODl9.knZGXb0JA4lMZCmra1lGOfvteMgSlGX2cC_N04vUPP4
+
+###
+POST http://localhost:3000/user-create
+Content-Type: application/json
+
+{
+    "username":"rangbind10",
+    "email": "rang@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+}
+
+
+###
+POST http://localhost:3000/user-login
+Content-Type: application/json
+
+{
+    "username":"rangbind10",
+    "password": "123456"
+}
